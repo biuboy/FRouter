@@ -20,6 +20,12 @@
         <module name="ARouter.arouter-compiler" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.8" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="ARouter.app" target="11" />
+      <module name="ARouter.arouter-api" target="11" />
+      <module name="ARouter.common" target="11" />
+      <module name="ARouter.user" target="11" />
+      <module name="ARouter.zixun" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

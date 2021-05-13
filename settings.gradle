@@ -1,6 +1,3 @@
-include ':common'
-include ':zixun'
-include ':user'
 include ':arouter-api'
 include ':arouter-compiler'
 include ':arouter-annotation'

@@ -1,4 +1,6 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'//this
+group='com.github.biuboy'//this
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
@@ -28,5 +30,5 @@ dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.1.0'
-    implementation project(':arouter-annotation')
+    api project(':arouter-annotation')
 }

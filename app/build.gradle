@@ -1,6 +1,4 @@
-plugins {
-    id 'com.android.application'
-}
+apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 30
@@ -36,6 +34,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation project(":arouter-annotation")
     annotationProcessor project(":arouter-compiler")
+    implementation project(":arouter-api")
     // 如果是集成化模式，做发布版本时。各个模块都不能独立运行了
 
 }

@@ -1,6 +1,6 @@
 apply plugin: 'java-library'//this
-apply plugin: 'com.github.dcendents.android-maven'//this
-group='com.github.biuboy'//this
+//apply plugin: 'com.github.dcendents.android-maven'//this
+//group='com.github.biuboy'//this
 
 dependencies {
     compileOnly'com.google.auto.service:auto-service:1.0-rc7'

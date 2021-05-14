@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.text.TextUtils;
+import android.util.Log;
 import android.util.LruCache;
 
 import com.htf.arouter_annotation.bean.RouterBean;
@@ -100,6 +101,7 @@ public class RouterManager {
     }
 
     private RouterBean getRouterBean(Context context) {
+        Log.e("TAG", "context.getPackageName() == " + context.getPackageName());
         String groupClassName = context.getPackageName() + "." + FILE_GROUP_NAME + group;
         try {
             ARouterGroup aRouterGroup = mGroupLruCache.get(group);

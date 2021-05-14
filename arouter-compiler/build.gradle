@@ -10,7 +10,7 @@ dependencies {
     api "com.squareup:javapoet:1.13.0"
 
     // 引入annotation，处理@ARouter注解
-    api project(':arouter-annotation')
+    implementation project(':arouter-annotation')
 }
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8

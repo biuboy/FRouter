@@ -32,9 +32,10 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
-    implementation project(":arouter-annotation")
-    annotationProcessor project(":arouter-compiler")
-    implementation project(":arouter-api")
+//    implementation project(":arouter-annotation")
+//    annotationProcessor project(":arouter-compiler")
+//    implementation project(":arouter-api")
     // 如果是集成化模式，做发布版本时。各个模块都不能独立运行了
+    implementation 'com.github.biuboy:FRouter:v1.1.2'
 
 }

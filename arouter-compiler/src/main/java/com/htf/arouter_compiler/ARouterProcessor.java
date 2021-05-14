@@ -83,6 +83,7 @@ public class ARouterProcessor extends AbstractProcessor {
 
     @Override
     public boolean process(Set<? extends TypeElement> set, RoundEnvironment roundEnvironment) {
+        messager.printMessage(Diagnostic.Kind.NOTE, "进入process方法");
         if (!set.isEmpty()) {
             // 获取所有被 @ARouter 注解的 元素集合
             Set<? extends Element> elements = roundEnvironment.getElementsAnnotatedWith(ARouter.class);
@@ -93,6 +94,7 @@ public class ARouterProcessor extends AbstractProcessor {
                 //获取类节点，获取包节点(com.htf.xxx)
                 // String packageName = elementTool.getPackageOf(element).getQualifiedName().toString();
                 String className = element.getSimpleName().toString();//获取类名
+                messager.printMessage(Diagnostic.Kind.NOTE, "element == " + className);
                 ARouter aRouter = element.getAnnotation(ARouter.class);
 
                 // TODO  一系列的检查工作
@@ -280,7 +282,6 @@ public class ARouterProcessor extends AbstractProcessor {
     private boolean checkRouterPath(RouterBean bean) {
         String group = bean.getGroup();//app、user、zixun等module
         String path = bean.getPath();//   /app/MainActivity
-
         // TODO 校验path
         // @ARouter注解中的path值，必须要以 / 开头
         if (ProcessorUtils.isEmpty(path) || !path.startsWith("/")) {

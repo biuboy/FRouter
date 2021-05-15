@@ -2,4 +2,3 @@ include ':arouter-api'
 include ':arouter-compiler'
 include ':arouter-annotation'
 include ':app'
-rootProject.name = "ARouter"

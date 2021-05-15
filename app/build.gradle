@@ -32,8 +32,10 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
-    annotationProcessor project(":arouter-compiler")
-    implementation project(":arouter-api")
+//    annotationProcessor project(":arouter-compiler")
+//    implementation project(":arouter-api")
+    implementation 'com.github.biuboy:FRouter:v2.2.2'
+    annotationProcessor 'com.github.biuboy.FRouter:arouter-compiler:v2.2.2'
 
 
 }

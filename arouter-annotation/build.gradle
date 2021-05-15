@@ -1,6 +1,5 @@
 apply plugin: 'java-library'//this
 apply plugin: 'com.github.dcendents.android-maven'//this
-group='com.github.biuboy.arouter-annotation'//this
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
